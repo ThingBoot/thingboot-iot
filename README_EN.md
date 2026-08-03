@@ -28,7 +28,8 @@ This repository is the overview and navigation hub of the ThingBoot ecosystem: l
 │ thingboot-cloud             │  ThingBoot Cloud Platform
 │  ├─ thingboot-cloud-center  │  Cloud Core (core server)
 │  ├─ thingboot-cloud-node    │  Cloud Service Suite (IoT broker server)
-│  └─ thingboot-cloud-api     │  Cloud API (API server)
+│  ├─ thingboot-cloud-api     │  Cloud API (for web & client)
+│  └─ thingboot-cloud-open    │  Open Platform API (API server)
 └─────────────┬───────────────┘
 
            DEVICE SIDE
@@ -79,7 +80,8 @@ This repository is the overview and navigation hub of the ThingBoot ecosystem: l
 | --- | --- |
 | [thingboot-cloud-center](https://github.com/ThingBoot/thingboot-cloud-center) | Cloud core, deployed on the core server |
 | [thingboot-cloud-node](https://github.com/ThingBoot/thingboot-cloud-node) | Cloud service suite, deployed on IoT broker servers: an IoT middleware combining device access, message routing, device shadow, OTA, time sync, open platform APIs and a web admin UI |
-| [thingboot-cloud-api](https://github.com/ThingBoot/thingboot-cloud-api) | Cloud API services, deployed on API servers |
+| [thingboot-cloud-api](https://github.com/ThingBoot/thingboot-cloud-api) | Cloud API, called by the web console and client apps |
+| [thingboot-cloud-open](https://github.com/ThingBoot/thingboot-cloud-open) | Open platform API, deployed on API servers |
 
 ### ThingBoot Device
 

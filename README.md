@@ -11,11 +11,11 @@
 
 ```
             USER                 用户侧
-┌─────────────────────────────┐              
+┌─────────────────────────────┐
 │ thingboot-web               │  芯步Web端
 │  ├─ thingboot-web-java      │      Java语言Web端
 │  └─ thingboot-web-php       │      PHP语言Web端
-├─────────────────────────────┤              
+├─────────────────────────────┤
 │ thingboot-client            │  芯步客户端
 │  ├─ client-android          │      安卓原生客户端
 │  ├─ client-ios              │      iOS原生客户端
@@ -28,7 +28,8 @@
 │ thingboot-cloud             │  芯步云平台
 │  ├─ thingboot-cloud-center  │      云服务器核心（核心服务器）
 │  ├─ thingboot-cloud-node    │      云服务器服务套件（物联网 Broker 服务器）
-│  └─ thingboot-cloud-api     │      云服务器接口（接口服务器）
+│  ├─ thingboot-cloud-api     │      云平台接口（供web和client调用）
+│  └─ thingboot-cloud-open    │      开放平台接口（接口服务器）
 └─────────────┬───────────────┘
 
            DEVICES               设备侧
@@ -78,7 +79,8 @@
 | --- | --- |
 | [thingboot-cloud-center](https://github.com/ThingBoot/thingboot-cloud-center) | 云服务器核心，部署于核心服务器 |
 | [thingboot-cloud-node](https://github.com/ThingBoot/thingboot-cloud-node) | 云服务器服务套件，部署于物联网 Broker 服务器：设备接入、消息路由、设备影子、OTA、对时、开放平台接口与 Web 管理界面合一的物联网中间件 |
-| [thingboot-cloud-api](https://github.com/ThingBoot/thingboot-cloud-api) | 云服务器接口，部署于接口服务器 |
+| [thingboot-cloud-api](https://github.com/ThingBoot/thingboot-cloud-api) | 云平台接口，供 Web 端和客户端调用 |
+| [thingboot-cloud-open](https://github.com/ThingBoot/thingboot-cloud-open) | 开放平台接口，部署于接口服务器 |
 
 ### 芯步设备端
 
