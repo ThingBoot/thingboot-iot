@@ -2,7 +2,7 @@
 
 [中文](README.md) | **English**
 
-ThingBoot is a complete IoT ecosystem covering the full chain from devices and cloud platform to Web consoles and client apps.
+ThingBoot is an enterprise-grade IoT ecosystem and technical framework covering the full chain from devices and cloud platform to Web consoles and client apps.
 Except for a few core service components, every part of the architecture is fully open source.
 
 This repository is the overview and navigation hub of the ThingBoot ecosystem: learn the overall architecture here and jump quickly to each sub-project repository.
