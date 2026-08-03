@@ -10,31 +10,31 @@ This repository is the overview and navigation hub of the ThingBoot ecosystem: l
 ## Overall Architecture
 
 ```
-┌──────────────────────────────── Upper Layer ─────────────────────────────────┐
-│                                                                              │
-│   Apps & Management               Devices                                    │
-│  ┌──────────────────────────┐                ┌──────────────────────────┐    │
-│  │ thingboot-web            │                │ thingboot-device         │    │
-│  │ ThingBoot Web            │                │ Device SDKs              │    │
-│  │  ├─ thingboot-web-java   │                │  ├─ esp-arduino-sdk      │    │
-│  │  └─ thingboot-web-php    │                │  └─ esp-idf-sdk          │    │
-│  ├──────────────────────────┤                └────────────┬─────────────┘    │
-│  │ thingboot-client         │                             │                  │
-│  │ Client Apps              │                             │                  │
-│  │  ├─ client-android       │                             │                  │
-│  │  ├─ client-ios           │                             │                  │
-│  │  └─ client-uniapp        │                             │                  │
-│  └────────────┬─────────────┘                             │                  │
-└───────────────┼───────────────────────────────────────────┼──────────────────┘
-                │               MQTT / HTTPS                │
-┌───────────────▼───────────────────────────────────────────▼──────────────────┐
-│                        Cloud Layer / ThingBoot Cloud                         │
-│                                                                              │
-│   thingboot-cloud ThingBoot Cloud Platform                                   │
-│   ├─ thingboot-cloud-center Cloud Core (core server)                         │
-│   ├─ thingboot-cloud-node   Cloud Service Suite (IoT broker server)          │
-│   └─ thingboot-cloud-api    Cloud API (API server)                           │
-└──────────────────────────────────────────────────────────────────────────────┘
+UPPER LAYER
+══════════════════════════════════════════════════════════════════════════════
+  APPS & MANAGEMENT                                DEVICES
+  ┌──────────────────────────┐                ┌──────────────────────────┐
+  │ thingboot-web            │                │ thingboot-device         │
+  │  ├─ thingboot-web-java   │                │  ├─ esp-arduino-sdk      │
+  │  └─ thingboot-web-php    │                │  └─ esp-idf-sdk          │
+  ├──────────────────────────┤                └────────────┬─────────────┘
+  │ thingboot-client         │                             │
+  │  ├─ client-android       │                             │
+  │  ├─ client-ios           │                             │
+  │  ├─ client-uniapp        │                             │
+  │  └─ client-flutter       │                             │
+  └────────────┬─────────────┘                             │
+               └────────────── MQTT / HTTPS ───────────────┘
+CLOUD LAYER
+══════════════════════════════════════════════════════════════════════════════
+                                                           ▼
+  ┌──────────────────────────────────────────────────────────────────────────┐
+  │ thingboot-cloud                                                          │	ThingBoot Cloud Platform
+  │  ├─ thingboot-cloud-center                                               │	Cloud Core (core server)
+  │  ├─ thingboot-cloud-node                                                 │	Cloud Service Suite (IoT broker server)
+  │  └─ thingboot-cloud-api                                                  │	Cloud API (API server)
+  └──────────────────────────────────────────────────────────────────────────┘
+
 ```
 
 - **Upper layer · Apps & Management**: [thingboot-web](https://github.com/ThingBoot/thingboot-web) (Web console) and [thingboot-client](https://github.com/ThingBoot/thingboot-client) (client apps) for end users and operators.
@@ -66,6 +66,7 @@ This repository is the overview and navigation hub of the ThingBoot ecosystem: l
 | [thingboot-client-android](https://github.com/ThingBoot/thingboot-client-android) | Native Android client |
 | [thingboot-client-ios](https://github.com/ThingBoot/thingboot-client-ios) | Native iOS client |
 | [thingboot-client-uniapp](https://github.com/ThingBoot/thingboot-client-uniapp) | uni-app cross-platform client, one codebase for multiple platforms |
+| [thingboot-client-flutter](https://github.com/ThingBoot/thingboot-client-flutter) | Flutter cross-platform client |
 
 ### ThingBoot Cloud
 

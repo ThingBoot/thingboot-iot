@@ -10,31 +10,30 @@
 ## 整体架构
 
 ```
-┌──────────────────────────────────── 上层 ────────────────────────────────────┐
-│                                                                              │
-│   管理与应用侧                               设备侧                          │
-│  ┌──────────────────────────┐                ┌──────────────────────────┐    │
-│  │ thingboot-web            │                │ thingboot-device         │    │
-│  │ 芯步 Web 端              │                │ 芯步设备端               │    │
-│  │  ├─ thingboot-web-java   │                │  ├─ esp-arduino-sdk      │    │
-│  │  └─ thingboot-web-php    │                │  └─ esp-idf-sdk          │    │
-│  ├──────────────────────────┤                └────────────┬─────────────┘    │
-│  │ thingboot-client         │                             │                  │
-│  │ 芯步客户端               │                             │                  │
-│  │  ├─ client-android       │                             │                  │
-│  │  ├─ client-ios           │                             │                  │
-│  │  └─ client-uniapp        │                             │                  │
-│  └────────────┬─────────────┘                             │                  │
-└───────────────┼───────────────────────────────────────────┼──────────────────┘
-                │               MQTT / HTTPS                │
-┌───────────────▼───────────────────────────────────────────▼──────────────────┐
-│                              底层 / 芯步云平台                               │
-│                                                                              │
-│   thingboot-cloud 芯步云平台                                                 │
-│   ├─ thingboot-cloud-center 云服务器核心（部署于核心服务器）                 │
-│   ├─ thingboot-cloud-node   云服务器服务套件（部署于物联网 Broker 服务器）   │
-│   └─ thingboot-cloud-api    云服务器接口（部署于接口服务器）                 │
-└──────────────────────────────────────────────────────────────────────────────┘
+UPPER LAYER	上层
+══════════════════════════════════════════════════════════════════════════════
+  APPS & MANAGEMENT                                DEVICES                    	管理与应用侧 / 设备侧
+  ┌──────────────────────────┐                ┌──────────────────────────┐
+  │ thingboot-web            │                │ thingboot-device         │  	芯步 Web 端（左）/ 芯步设备端（右）
+  │  ├─ thingboot-web-java   │                │  ├─ esp-arduino-sdk      │
+  │  └─ thingboot-web-php    │                │  └─ esp-idf-sdk          │
+  ├──────────────────────────┤                └────────────┬─────────────┘
+  │ thingboot-client         │                             │               	芯步客户端
+  │  ├─ client-android       │                             │
+  │  ├─ client-ios           │                             │
+  │  ├─ client-uniapp        │                             │
+  │  └─ client-flutter       │                             │
+  └────────────┬─────────────┘                             │
+               └────────────── MQTT / HTTPS ───────────────┘
+CLOUD LAYER	底层
+══════════════════════════════════════════════════════════════════════════════
+                                                           ▼
+  ┌──────────────────────────────────────────────────────────────────────────┐
+  │ thingboot-cloud                                                          │	芯步云平台
+  │  ├─ thingboot-cloud-center                                               │	云服务器核心（核心服务器）
+  │  ├─ thingboot-cloud-node                                                 │	云服务器服务套件（物联网 Broker 服务器）
+  │  └─ thingboot-cloud-api                                                  │	云服务器接口（接口服务器）
+  └──────────────────────────────────────────────────────────────────────────┘
 ```
 
 - **上层 · 管理与应用侧**：面向用户与运营者的 [thingboot-web](https://github.com/ThingBoot/thingboot-web)（芯步 Web 端）和 [thingboot-client](https://github.com/ThingBoot/thingboot-client)（芯步客户端）。
@@ -66,6 +65,7 @@
 | [thingboot-client-android](https://github.com/ThingBoot/thingboot-client-android) | Android 原生客户端 |
 | [thingboot-client-ios](https://github.com/ThingBoot/thingboot-client-ios) | iOS 原生客户端 |
 | [thingboot-client-uniapp](https://github.com/ThingBoot/thingboot-client-uniapp) | uni-app 跨平台客户端，一套代码多端运行 |
+| [thingboot-client-flutter](https://github.com/ThingBoot/thingboot-client-flutter) | Flutter 跨平台客户端 |
 
 ### 芯步云平台
 
