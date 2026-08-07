@@ -36,9 +36,9 @@ This repository is the overview and navigation hub of the ThingBoot ecosystem: l
 ┌─────────────────────────────┐
 │ thingboot-device            │  ThingBoot Device Development
 │  ├─ esp-arduino-sdk         │  ESP Arduino firmware SDK
-│  ├─ esp-arduino-driver      │  ESP Arduino drivers
+│  ├─ esp-arduino-drivers     │  ESP Arduino drivers
 │  ├─ esp-idf-sdk             │  ESP-IDF firmware SDK
-│  └─ esp-idf-sdk-driver      │  ESP-IDF drivers
+│  └─ esp-idf-sdk-drivers     │  ESP-IDF drivers
 └─────────────────────────────┘
 
 ```
@@ -90,7 +90,7 @@ This repository is the overview and navigation hub of the ThingBoot ecosystem: l
 | [thingboot-device-esp-arduino-sdk](https://github.com/ThingBoot/thingboot-device-esp-arduino-sdk) | ESP Arduino firmware SDK supporting ESP8266 / ESP32 / ESP32-S3 / ESP32-C6, with built-in WiFi, Ethernet, 4G Cat.1 and WiFi Mesh networking, out-of-the-box cloud connection and OTA |
 | [thingboot-device-esp-arduino-drivers](https://github.com/ThingBoot/thingboot-device-esp-arduino-drivers) | ESP Arduino drivers |
 | [thingboot-device-esp-idf-sdk](https://github.com/ThingBoot/thingboot-device-esp-idf-sdk) | ESP-IDF firmware SDK, a port of the Arduino SDK above, supporting ESP32 / ESP32-S3 / ESP32-C6 / ESP32-C3 |
-| [thingboot-device-esp-idf-sdk-driver](https://github.com/ThingBoot/thingboot-device-esp-idf-sdk-driver) | ESP-IDF drivers |
+| [thingboot-device-esp-idf-driver](https://github.com/ThingBoot/thingboot-device-esp-idf-drivers) | ESP-IDF drivers |
 
 ## Open Source
 
